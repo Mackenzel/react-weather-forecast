@@ -1,5 +1,6 @@
 import React from "react";
 import FriendlyDate from "./FriendlyDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -13,7 +14,7 @@ export default function WeatherInfo(props) {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img src={props.info.iconUrl} alt="Weather Description" />{" "}
+          <WeatherIcon code={props.info.icon} alt={props.info.description} />
           <span className="degree">{Math.round(props.info.temperature)}</span>
           <span className="unit">°F|°C</span>
         </div>

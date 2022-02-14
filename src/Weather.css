@@ -22,16 +22,12 @@
   text-align: left;
   list-style: none;
 }
-.Weather img {
-  border: 2px solid lightgray;
-  border-radius: 20px;
-  height: 70px;
-  margin-bottom: 20px;
-  margin-right: 10px;
+.Weather canvas {
+  margin: 5px;
 }
 .Weather .degree {
   color: black;
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 500;
 }
 .Weather .unit {
