@@ -16,7 +16,10 @@ export default function UnitConversion(props) {
       <div className="UnitConversion">
         <span className="degree">{Math.round(props.fahr)}</span>
         <span className="unit">
-          °F|<a onClick={convertToCel}>°C</a>
+          °F|
+          <a href="/" onClick={convertToCel}>
+            °C
+          </a>
         </span>
       </div>
     );
@@ -26,7 +29,10 @@ export default function UnitConversion(props) {
       <div className="UnitConversion">
         <span className="degree">{Math.round(cel)}</span>
         <span className="unit">
-          <a onClick={convertToFahr}>°F</a>|°C
+          <a href="/" onClick={convertToFahr}>
+            °F
+          </a>
+          |°C
         </span>
       </div>
     );
