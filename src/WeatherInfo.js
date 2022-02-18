@@ -15,13 +15,13 @@ export default function WeatherInfo(props) {
         </li>
         <li>{props.info.description}</li>
       </ul>
-      <div className="row ps-5">
-        <div className="col-6 d-flex">
+      <div className="row ps-3">
+        <div className="col-6 d-flex justify-content-evenly">
           <span className="icon">
             {" "}
             <WeatherIcon
               code={props.info.icon}
-              size={60}
+              size={64}
               alt={props.info.description}
             />
           </span>
