@@ -1,2 +1,4 @@
-.WeatherInfo .mini-comp {
+.WeatherInfo .icon {
+  position: relative;
+  top: 10px;
 }
