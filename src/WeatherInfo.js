@@ -15,7 +15,7 @@ export default function WeatherInfo(props) {
         </li>
         <li>{props.info.description}</li>
       </ul>
-      <div className="row ps-3">
+      <div className="row ps-4 mb-4">
         <div className="col-6 d-flex justify-content-evenly">
           <span className="icon">
             {" "}
@@ -27,7 +27,7 @@ export default function WeatherInfo(props) {
           </span>
           <UnitConversion fahr={props.info.temperature} />
         </div>
-        <div className="col-6 mt-4">
+        <div className="col-6 mt-4 ps-5">
           <ul>
             <li>Humidity: {props.info.humidity}%</li>
             <li>Wind: {Math.round(props.info.wind)}mph</li>
